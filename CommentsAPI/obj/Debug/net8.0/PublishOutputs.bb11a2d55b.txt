@@ -1,0 +1,7 @@
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\CommentsAPI.exe
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\CommentsAPI.dll
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\CommentsAPI.deps.json
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\CommentsAPI.runtimeconfig.json
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\CommentsAPI\obj\Debug\net8.0\PubTmp\Out\CommentsAPI.pdb

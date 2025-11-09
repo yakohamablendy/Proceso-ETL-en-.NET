@@ -1,0 +1,11 @@
+# Archivos de configuración local de Visual Studio
+.vs/
+*.suo
+*.user
+
+# Carpetas de compilación
+[Bb]in/
+[Oo]bj/
+
+# Archivos de configuración sensibles que NO deben subirse
+appsettings.Development.json

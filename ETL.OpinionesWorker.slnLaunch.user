@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CommentsAPI\\CommentsAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
