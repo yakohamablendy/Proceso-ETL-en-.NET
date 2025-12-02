@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\services\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\services\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\extractors\\apiextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\extractors\\apiextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C691D72-B2F4-451E-A657-E6FA6BA8A566}|CommentsAPI\\CommentsAPI.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\commentsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C691D72-B2F4-451E-A657-E6FA6BA8A566}|CommentsAPI\\CommentsAPI.csproj|solutionrelative:commentsapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiExtractor.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T14:28:30.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CommentsAPI\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CommentsAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-09T14:18:58.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataLoader.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAUwDgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T14:08:30.275Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"

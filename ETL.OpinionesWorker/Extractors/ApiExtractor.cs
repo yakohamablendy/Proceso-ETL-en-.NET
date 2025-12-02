@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
-using System.Net.Http.Json; // Usaremos esto para que sea más fácil y robusto
+using System.Net.Http.Json; 
 using System.Threading.Tasks;
 using ETL.OpinionesWorker.Models;
 using Microsoft.Extensions.Logging;
@@ -27,8 +27,6 @@ namespace ETL.OpinionesWorker.Extractors
             try
             {
                 _logger.LogInformation("Iniciando extracción desde API: {ApiUrl}", _apiUrl);
-
-                // Esta línea es más moderna y maneja la deserialización automáticamente
                 var records = await _httpClient.GetFromJsonAsync<List<SocialComment>>(_apiUrl);
 
                 if (records != null)
@@ -42,9 +40,9 @@ namespace ETL.OpinionesWorker.Extractors
                             IdCliente = record.UserId,
                             IdProducto = record.ProductId,
                             Comentario = record.CommentText,
-                            Fuente = "SocialMedia", // Fuente fija para la API
-                            Rating = record.Rating, // Ahora sí leemos el Rating
-                            Clasificacion = record.Sentiment, // Y también el Sentimiento (Clasificacion)
+                            Fuente = "SocialMedia", 
+                            Rating = record.Rating, 
+                            Clasificacion = record.Sentiment, 
                             Fecha = !string.IsNullOrEmpty(record.Date) ? DateTime.Parse(record.Date) : default
                         });
                     }
@@ -58,14 +56,12 @@ namespace ETL.OpinionesWorker.Extractors
         }
 
         public string GetSourceName() => "API REST - Comentarios Sociales";
-
-        // ESTA ES LA CLASE CORRECTA Y COMPLETA QUE COINCIDE CON TU API
         private class SocialComment
         {
             public string? CommentId { get; set; }
             public string? UserId { get; set; }
             public string? ProductId { get; set; }
-            public string? Date { get; set; } // Nombre correcto de la propiedad de fecha
+            public string? Date { get; set; } 
             public string? CommentText { get; set; }
             public int? Rating { get; set; }
             public string? Sentiment { get; set; }

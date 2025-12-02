@@ -105,3 +105,4 @@ E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 D
 E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\ETL.OpinionesWorker\obj\Debug\net8.0\ETL.OpinionesWorker.pdb
 E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\ETL.OpinionesWorker\obj\Debug\net8.0\ETL.OpinionesWorker.genruntimeconfig.cache
 E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\ETL.OpinionesWorker\obj\Debug\net8.0\ref\ETL.OpinionesWorker.dll
+E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\ETL.OpinionesWorker\ETL.OpinionesWorker\obj\Debug\net8.0\ETL.OpinionesWorker.sourcelink.json

@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\services\\dimensionloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\services\\dimensionloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\models\\tiempomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\models\\tiempomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\models\\fuentemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\models\\fuentemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\models\\productomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\models\\productomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|e:\\clases\\universidad\\penultimo trimestre\\electiva 1\\asignaci\u00F3nes\\actividad 1 desarrollo del proceso etl en net(arquitectura)\\etl.opinionesworker\\etl.opinionesworker\\services\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49B3D750-6B67-45E1-ACB8-24A5A9058B57}|ETL.OpinionesWorker\\ETL.OpinionesWorker.csproj|solutionrelative:etl.opinionesworker\\services\\dataloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,45 +58,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiExtractor.cs",
-              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
-              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
-              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
-              "RelativeToolTip": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAqwEkAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Worker.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Worker.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Worker.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Worker.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Worker.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvy8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T14:28:30.216Z",
+              "WhenOpened": "2025-12-02T23:35:15.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Program.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Program.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Program.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:33:17.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "CommentsAPI\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "CommentsAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-09T14:18:58.266Z",
+              "Title": "DimensionLoader.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DimensionLoader.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Services\\DimensionLoader.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DimensionLoader.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Services\\DimensionLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:31:41.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataLoader.cs",
-              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
-              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
-              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
-              "RelativeToolTip": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAUwDgAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\appsettings.json",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\appsettings.json",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\appsettings.json",
+              "RelativeToolTip": "ETL.OpinionesWorker\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T23:26:59.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TiempoModel.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\TiempoModel.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Models\\TiempoModel.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\TiempoModel.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Models\\TiempoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T14:08:30.275Z",
+              "WhenOpened": "2025-12-02T23:25:40.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FuenteModel.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\FuenteModel.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Models\\FuenteModel.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\FuenteModel.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Models\\FuenteModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:25:19.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductoModel.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\ProductoModel.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Models\\ProductoModel.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\ProductoModel.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Models\\ProductoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:24:54.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteModel.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\ClienteModel.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Models\\ClienteModel.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Models\\ClienteModel.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Models\\ClienteModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T23:24:17.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-02T23:13:59.538Z",
               "EditorCaption": ""
             },
             {
@@ -70,6 +184,43 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ApiExtractor.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Extractors\\ApiExtractor.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T14:28:30.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "CommentsAPI\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\CommentsAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "CommentsAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-09T14:18:58.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DataLoader.cs",
+              "DocumentMoniker": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "RelativeDocumentMoniker": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "ToolTip": "E:\\Clases\\Universidad\\Penultimo Trimestre\\Electiva 1\\Asignaci\u00F3nes\\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\\ETL.OpinionesWorker\\ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "RelativeToolTip": "ETL.OpinionesWorker\\Services\\DataLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T14:08:30.275Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
