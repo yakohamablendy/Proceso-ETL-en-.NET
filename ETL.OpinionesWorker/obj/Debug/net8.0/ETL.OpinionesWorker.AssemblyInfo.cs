@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ETL.OpinionesWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+111034fda483f1c32290557788a4eaff670c2307")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5818a67345972b5479ffa82588d9dc11f8a9777")]
 [assembly: System.Reflection.AssemblyProductAttribute("ETL.OpinionesWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ETL.OpinionesWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
