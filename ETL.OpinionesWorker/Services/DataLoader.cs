@@ -13,7 +13,10 @@ namespace ETL.OpinionesWorker.Services
 
         public DataLoader(IConfiguration configuration, ILogger<DataLoader> logger)
         {
-            _connectionString = configuration["StagingConnectionString"] ?? throw new ArgumentNullException("StagingConnectionString no configurado");
+
+            _connectionString = configuration.GetConnectionString("DWOpiniones")
+                                ?? configuration["StagingConnectionString"]
+                                ?? throw new ArgumentNullException("Connection string no configurada");
             _logger = logger;
         }
 
@@ -26,15 +29,16 @@ namespace ETL.OpinionesWorker.Services
             }
 
             int insertedCount = 0;
+
+  
             var query = @"
                 INSERT INTO Staging.OpinionesStaging 
-                    (IdOpinion, IdCliente, IdProducto, Fecha, Comentario, Fuente, Rating, Clasificacion, FechaCarga) 
+                    (IdCliente, IdProducto, Fecha, Comentario, Fuente, Rating, Clasificacion, FechaCarga) 
                 VALUES 
-                    (@IdOpinion, @IdCliente, @IdProducto, @Fecha, @Comentario, @Fuente, @Rating, @Clasificacion, @FechaCarga)";
+                    (@IdCliente, @IdProducto, @Fecha, @Comentario, @Fuente, @Rating, @Clasificacion, @FechaCarga)";
 
             try
             {
-                _logger.LogInformation("Iniciando carga de {Count} registros desde {SourceName} a Staging", opiniones.Count, sourceName);
                 using (var connection = new SqlConnection(_connectionString))
                 {
                     await connection.OpenAsync();
@@ -42,14 +46,18 @@ namespace ETL.OpinionesWorker.Services
                     {
                         using (var command = new SqlCommand(query, connection))
                         {
-                            command.Parameters.AddWithValue("@IdOpinion", (object)opinion.IdOpinion ?? DBNull.Value);
+                        
                             command.Parameters.AddWithValue("@IdCliente", (object)opinion.IdCliente ?? DBNull.Value);
                             command.Parameters.AddWithValue("@IdProducto", (object)opinion.IdProducto ?? DBNull.Value);
-                            command.Parameters.AddWithValue("@Fecha", (opinion.Fecha < SqlDateTime.MinValue.Value) ? (object)DBNull.Value : opinion.Fecha);
+
+                          
+                            var fechaSafe = (opinion.Fecha < SqlDateTime.MinValue.Value) ? SqlDateTime.MinValue.Value : opinion.Fecha;
+                            command.Parameters.AddWithValue("@Fecha", fechaSafe);
+
                             command.Parameters.AddWithValue("@Comentario", (object)opinion.Comentario ?? DBNull.Value);
-                            command.Parameters.AddWithValue("@Fuente", (object)opinion.Fuente ?? DBNull.Value);
+                            command.Parameters.AddWithValue("@Fuente", (object)opinion.Fuente ?? sourceName);
                             command.Parameters.AddWithValue("@Rating", (object)opinion.Rating ?? DBNull.Value);
-                            command.Parameters.AddWithValue("@Clasificacion", (object)opinion.Clasificacion ?? DBNull.Value);
+                            command.Parameters.AddWithValue("@Clasificacion", (object)opinion.Clasificacion ?? "Neutro");
                             command.Parameters.AddWithValue("@FechaCarga", DateTime.Now);
 
                             await command.ExecuteNonQueryAsync();
@@ -122,6 +130,5 @@ namespace ETL.OpinionesWorker.Services
                 throw;
             }
         }
-        
     }
 }

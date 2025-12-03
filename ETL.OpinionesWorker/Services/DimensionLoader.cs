@@ -12,8 +12,7 @@ namespace ETL.OpinionesWorker.Services
     {
         private readonly string _connectionString;
         private readonly ILogger<DimensionLoader> _logger;
-
-       
+        
         private const string RUTA_BASE = @"E:\Clases\Universidad\Penultimo Trimestre\Electiva 1\Asignaciónes\Actividad 1 Desarrollo del Proceso ETL en NET(Arquitectura)\Archivo CSV Análisis de Opiniones de Clientes-20251107\";
 
         public DimensionLoader(IConfiguration configuration, ILogger<DimensionLoader> logger)
@@ -26,27 +25,47 @@ namespace ETL.OpinionesWorker.Services
         {
             try
             {
-                _logger.LogInformation(">>> INICIANDO CARGA DE DIMENSIONES <<<");
+                _logger.LogInformation(">>> RE-CARGANDO DIMENSIONES (CON IDs ORIGINALES) <<<");
 
+                await LimpiarDimensiones();
                 await CargarClientes();
                 await CargarProductos();
                 await CargarFuentes();
                 await CargarTiempo();
 
-                _logger.LogInformation(">>> PROCESO FINALIZADO CON ÉXITO <<<");
+                _logger.LogInformation(">>> DIMENSIONES ACTUALIZADAS CORRECTAMENTE <<<");
             }
             catch (Exception ex)
             {
-                _logger.LogError($"ERROR CRÍTICO: {ex.Message}");
+                _logger.LogError($"ERROR CRÍTICO EN DIMENSIONES: {ex.Message}");
+                throw; 
             }
+        }
+
+        private async Task LimpiarDimensiones()
+        {
+            using var conn = new SqlConnection(_connectionString);
+            await conn.OpenAsync();
+           
+            string sql = @"
+                DELETE FROM Fact.FactOpiniones;
+                DELETE FROM Dimension.Cliente;
+                DELETE FROM Dimension.DimProducto;
+                DELETE FROM Dimension.DimFuente;
+                DELETE FROM Dimension.DimTiempo;
+                -- Reiniciamos contadores (aunque usaremos IDs manuales, es buena práctica)
+                DBCC CHECKIDENT ('Dimension.Cliente', RESEED, 0);
+                DBCC CHECKIDENT ('Dimension.DimProducto', RESEED, 0);
+                DBCC CHECKIDENT ('Dimension.DimFuente', RESEED, 0);
+            ";
+            using var cmd = new SqlCommand(sql, conn);
+            await cmd.ExecuteNonQueryAsync();
         }
 
         private async Task CargarClientes()
         {
             var ruta = Path.Combine(RUTA_BASE, "clients.csv");
-            if (!File.Exists(ruta)) { _logger.LogError($"No encontrado: {ruta}"); return; }
-
-            _logger.LogInformation("Cargando Dimension.Cliente...");
+            if (!File.Exists(ruta)) return;
 
             using var reader = new StreamReader(ruta);
             using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
@@ -55,23 +74,31 @@ namespace ETL.OpinionesWorker.Services
             using var conn = new SqlConnection(_connectionString);
             await conn.OpenAsync();
 
+       
+            await new SqlCommand("SET IDENTITY_INSERT Dimension.Cliente ON", conn).ExecuteNonQueryAsync();
+
             foreach (var r in registros)
             {
-                string query = "INSERT INTO Dimension.Cliente (NombreCliente, Email, Pais, Segmento) VALUES (@Nom, @Email, 'Desconocido', 'General')";
+                string query = "INSERT INTO Dimension.Cliente (IdCliente, NombreCliente, Email, Pais, Segmento) VALUES (@Id, @Nom, @Email, 'Desconocido', 'General')";
                 using var cmd = new SqlCommand(query, conn);
+
+             
+                int idCliente = int.Parse(r.IdCliente.ToString());
+
+                cmd.Parameters.AddWithValue("@Id", idCliente);
                 cmd.Parameters.AddWithValue("@Nom", (string)r.Nombre);
                 cmd.Parameters.AddWithValue("@Email", (string)r.Email);
                 await cmd.ExecuteNonQueryAsync();
             }
+
+            await new SqlCommand("SET IDENTITY_INSERT Dimension.Cliente OFF", conn).ExecuteNonQueryAsync();
             _logger.LogInformation("Dimension.Cliente cargada.");
         }
 
         private async Task CargarProductos()
         {
             var ruta = Path.Combine(RUTA_BASE, "products.csv");
-            if (!File.Exists(ruta)) { _logger.LogError($"No encontrado: {ruta}"); return; }
-
-            _logger.LogInformation("Cargando Dimension.DimProducto...");
+            if (!File.Exists(ruta)) return;
 
             using var reader = new StreamReader(ruta);
             using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
@@ -80,23 +107,30 @@ namespace ETL.OpinionesWorker.Services
             using var conn = new SqlConnection(_connectionString);
             await conn.OpenAsync();
 
+            await new SqlCommand("SET IDENTITY_INSERT Dimension.DimProducto ON", conn).ExecuteNonQueryAsync();
+
             foreach (var r in registros)
             {
-                string query = "INSERT INTO Dimension.DimProducto (NombreProducto, Categoria) VALUES (@Nom, @Cat)";
+                string query = "INSERT INTO Dimension.DimProducto (IdProducto, NombreProducto, Categoria) VALUES (@Id, @Nom, @Cat)";
                 using var cmd = new SqlCommand(query, conn);
+
+           
+                int idProducto = int.Parse(r.IdProducto.ToString());
+
+                cmd.Parameters.AddWithValue("@Id", idProducto);
                 cmd.Parameters.AddWithValue("@Nom", (string)r.Nombre);
                 cmd.Parameters.AddWithValue("@Cat", (string)r.Categoría);
                 await cmd.ExecuteNonQueryAsync();
             }
+
+            await new SqlCommand("SET IDENTITY_INSERT Dimension.DimProducto OFF", conn).ExecuteNonQueryAsync();
             _logger.LogInformation("Dimension.DimProducto cargada.");
         }
 
         private async Task CargarFuentes()
         {
             var ruta = Path.Combine(RUTA_BASE, "fuente_datos.csv");
-            if (!File.Exists(ruta)) { _logger.LogError($"No encontrado: {ruta}"); return; }
-
-            _logger.LogInformation("Cargando Dimension.DimFuente...");
+            if (!File.Exists(ruta)) return;
 
             using var reader = new StreamReader(ruta);
             using var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.InvariantCulture));
@@ -112,12 +146,16 @@ namespace ETL.OpinionesWorker.Services
                 cmd.Parameters.AddWithValue("@Nom", (string)r.TipoFuente);
                 await cmd.ExecuteNonQueryAsync();
             }
+
+           
+            string fixQuery = "IF NOT EXISTS (SELECT 1 FROM Dimension.DimFuente WHERE NombreFuente = 'EncuestaInterna') INSERT INTO Dimension.DimFuente (NombreFuente) VALUES ('EncuestaInterna')";
+            await new SqlCommand(fixQuery, conn).ExecuteNonQueryAsync();
+
             _logger.LogInformation("Dimension.DimFuente cargada.");
         }
 
         private async Task CargarTiempo()
         {
-            _logger.LogInformation("Generando Dimension.DimTiempo...");
             DateTime inicio = new DateTime(2024, 09, 01);
             DateTime fin = new DateTime(2025, 12, 31);
 

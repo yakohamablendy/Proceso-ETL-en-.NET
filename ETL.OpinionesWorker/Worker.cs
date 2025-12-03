@@ -1,42 +1,63 @@
+using ETL.OpinionesWorker.Extractors;
 using ETL.OpinionesWorker.Services;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace ETL.OpinionesWorker
 {
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
+        private readonly IConfiguration _configuration;
         private readonly IServiceProvider _serviceProvider;
+        private readonly DataLoader _dataLoader;
+        private readonly ILoggerFactory _loggerFactory;
 
-        public Worker(ILogger<Worker> logger, IServiceProvider serviceProvider)
+        public Worker(ILogger<Worker> logger, IConfiguration configuration, IServiceProvider serviceProvider, DataLoader dataLoader, ILoggerFactory loggerFactory)
         {
             _logger = logger;
+            _configuration = configuration;
             _serviceProvider = serviceProvider;
+            _dataLoader = dataLoader;
+            _loggerFactory = loggerFactory;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            _logger.LogInformation(">>> Worker iniciado para CARGA DE DIMENSIONES: {time}", DateTimeOffset.Now);
+            _logger.LogInformation(">>> INICIANDO PROCESO MAESTRO <<<");
 
             try
             {
                 using (var scope = _serviceProvider.CreateScope())
                 {
-                    var dimensionLoader = scope.ServiceProvider.GetRequiredService<DimensionLoader>();
-                    await dimensionLoader.CargarTodasLasDimensiones();
+                    _logger.LogInformation("--- FASE 0: Reparando Dimensiones ---");
+                    var dimLoader = scope.ServiceProvider.GetRequiredService<DimensionLoader>();
+                    await dimLoader.CargarTodasLasDimensiones();
+
+                    _logger.LogInformation("--- FASE 1: Carga a Staging ---");
+                    await _dataLoader.ClearStagingAsync();
+
+                    string csvPath = _configuration["DataSources:CsvFilePath"];
+           
+                    var csvExtractor = new CsvExtractor(csvPath, _loggerFactory.CreateLogger<CsvExtractor>());
+
+                    var datosCsv = await csvExtractor.ExtractAsync();
+
+                    await _dataLoader.LoadToStagingAsync(datosCsv, "CSV Real");
+                    
+                    _logger.LogInformation("--- FASE 2: Carga de Facts ---");
+                    var factLoader = scope.ServiceProvider.GetRequiredService<FactLoader>();
+                    await factLoader.ProcesarFactTable();
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error al ejecutar el Worker.");
+                _logger.LogError(ex, "Error crítico en el Worker.");
             }
 
-            _logger.LogInformation(">>> Tarea finalizada. El servicio quedará en espera.");
+            _logger.LogInformation(">>> PROCESO FINALIZADO. REVISA LA BASE DE DATOS <<<");
             await Task.Delay(Timeout.Infinite, stoppingToken);
         }
     }
